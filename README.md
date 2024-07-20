@@ -68,7 +68,7 @@ Your team is investigating a suspicious event that occurred on `'2022-05-09'`. Y
 
 The `login_date` column in the `log_in_attempts` table contains information on the dates when login attempts were made.
 
-Use the `OR` operator to retrieve the failed login attempts on the specified days. 
+Use the `OR` operator to retrieve the failed login attempts on the specified days.  
 `SELECT * FROM log_in_attempts WHERE login_date = '2022-05-08' OR login_date = '2022-05-09';`
 
 How many login attempts were made on these two days?
@@ -95,7 +95,7 @@ How many login attempts were made on these two days?
 ## Retrieve login attempts outside of Mexico <a name="mexico">
 Now, your team is investigating logins that did not originate in Mexico, and you need to find this information. Note that the country field includes entries with `'MEX'` and `'MEXICO'`. You should use the `NOT` and `LIKE` operators and the matching pattern `'MEX%'`.  
 
-Run the following SQL query to retrieve login attempts that did not originate in Mexico.
+Run the following SQL query to retrieve login attempts that did not originate in Mexico.  
 `SELECT * FROM log_in_attempts WHERE NOT country LIKE 'MEX%';`
 
 How many login attempts were made outside of Mexico?
@@ -121,12 +121,12 @@ How many login attempts were made outside of Mexico?
 ## Retrieve employees in Marketing <a name="marketing">
 For tasks 4, 5 and 6 you need to retrieve the information from the department and office columns in the employees table.  
 
-You can run the following SQL query if you need to view the columns and values in the employees table:
+You can run the following SQL query if you need to view the columns and values in the employees table:  
 `SELECT * FROM employees;`
 
 Your team is updating employee machines, and you need to obtain the information about employees in the 'Marketing' department who are located in all offices in the East building (such as `'East-170'` or `'East-320'`).  
 
-Write a SQL query to retrieve this information from the `employees` table. Select all columns and include filters on the `department` and `office` columns to return only the needed records.  
+Write a SQL query to retrieve this information from the `employees` table. Select all columns and include filters on the `department` and `office` columns to return only the needed records.   
 Note: You’ll need to use the `AND` and `LIKE` operators to satisfy both of these criteria.  
 `SELECT * FROM employees WHERE department = 'Marketing' AND office LIKE 'East%';`
 
@@ -151,7 +151,7 @@ What is the username of the first employee in the Marketing department in the Ea
 Now, your team needs to perform a different update to the computers of all employees in the Finance or the Sales department, and you need to locate information on these employees.  
 
 Write a SQL query to retrieve records for employees in the `'Finance'` or the `'Sales'` department.  
-Note: Even though both conditions are based on the same column, you need to write out both full conditions. This means that you must specify `department` as the column in both conditions.  
+Note: Even though both conditions are based on the same column, you need to write out both full conditions. This means that you must specify `department` as the column in both conditions.   
 `SELECT * FROM employees WHERE department = 'Sales' OR department = 'Finance' ORDER BY department;`
 
 What is the username of the first employee in the Sales department returned by the query?  
@@ -184,12 +184,12 @@ What is the username of the first employee in the Sales department returned by t
 
 - lrodriqu
 
-NOTE: I am not sure what happened here, I guessed, the answer was correct even though the output does not display the answer I put.
+NOTE: I am not sure what happened here, I guessed, the answer was correct even though the output does not display the answer I put.  
 
 ## Retrieve all employees not in IT <a name="it">
 Your team needs to make one more update. This update was already made to employee computers in the Information Technology department. The team needs information about employees who are not in that department. You should use the NOT operator to identify these employees.  
 
-Write a SQL query to retrieve records for employees who are not in the `'Information Technology'` department.
+Write a SQL query to retrieve records for employees who are not in the `'Information Technology'` department.  
 `SELECT * FROM employees WHERE NOT department = 'information Technology';`
 
 How many employees are not in the Information Technology department?
@@ -217,4 +217,4 @@ How many employees are not in the Information Technology department?
 You now have practical experience in using SQL to
 
 run SQL queries to retrieve information from a database and
-apply AND, OR, and NOT operators to filter SQL queries.
+apply `AND`, `OR`, and `NOT` operators to filter SQL queries.
