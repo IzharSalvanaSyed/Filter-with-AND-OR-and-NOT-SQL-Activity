@@ -165,7 +165,6 @@ What is the username of the first employee in the Sales department returned by t
     |        1105 | b551c837d758 | kmei     | Finance    | Central-232 |
     |        1099 | v283w690x104 | anaser   | Finance    | West-357    |
     |        1174 | s371t911u987 | eortiz   | Finance    | North-428   |
-    |        1103 | NULL         | randerss | Marketing  | East-460    |
     |....         |              |          |            |             |
     |        1025 | z381a365b233 | jhill    | Sales      | North-115   |
     |        1039 | n253o917p623 | cjackson | Sales      | East-378    |
